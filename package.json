@@ -1,0 +1,10 @@
+{
+  "name": "researchmind-ai-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd backend && uvicorn main:app --reload --port 8000",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start": "npx -y concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  }
+}
